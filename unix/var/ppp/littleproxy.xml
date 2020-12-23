@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="WINDOWS-1251"?>
+<littleproxy:configuration>
+
+<global_option>
+    <type type_http="http" type_null="null">http</type>
+    <port>7070</port>
+    <transparent>false</transparent>
+    <authenticateClients noauth="0" basic="1" digest="2" kerberos="3">3</authenticateClients>
+    <ldap_ad_username>sa5svcportal</ldap_ad_username>
+    <ldap_ad_password>dddddddd</ldap_ad_password>
+    <java_security_krb5_conf>krb5.conf</java_security_krb5_conf>
+    <java_security_auth_login_config>login.conf</java_security_auth_login_config>
+    <ldap_url>ldap://rdc22-vip01.vip.cbr.ru:3268</ldap_url>
+    <default_realm>vip.cbr.ru</default_realm>
+    <local_bind_server>sa5portal.vip.cbr.ru</local_bind_server>
+    <local_bind_client>*</local_bind_client>
+</global_option>
+
+
+<guest default_user="CC_SKOI">
+<p host="177.*"        user="CC_SKOI" ></p>
+<p host="10.93.128.14" user="CC_SKOI" ></p>
+<p host="10.85.32.*"   user="CC_SKOI" ></p>
+<p host="10.85.36.*"   user="CC_SKOI" ></p>
+<p host="10.85.40.*"   user="CC_SKOI" ></p>
+<p host="10.85.45.*"   user="CC_SKOI" ></p>
+<p host="10.85.47.*"   user="CC_SKOI" ></p>
+<p host="10.85.80.*"   user="CC_SKOI" ></p>
+<p host="10.85.81.*"   user="CC_SKOI" ></p>
+<p host="10.85.107.*"  user="CC_SKOI" ></p>
+<p host="10.90.2.*"    user="CC_SKOI" ></p>
+<p host="10.90.3.*"    user="CC_SKOI" ></p>
+<p url="/performance/*.jnlp" user="CC_SKOI" ></p>
+<p url="/performance/*.jar" user="CC_SKOI" ></p>
+<p url="/performance/performance*" user="CC_SKOI" ></p>
+<p url="/performanceMsk/Performance*.jnlp" user="CC_SKOI" ></p>
+<p url="/performanceMsk/performance*.jnlp" user="CC_SKOI" ></p>
+<p url="/performanceMsk/*.jar" user="CC_SKOI" ></p>
+<p url="/performanceMsk/performance*" user="CC_SKOI" ></p>
+<p url="/manager*" user="CC_SKOI" ></p>
+<p url="/DAVWWWRoot*" user="CC_SKOI" ></p>
+</guest>
+
+<user_host>
+<default><host>10.93.129.252:9101</host></default>
+</user_host>
+
+<cookie>
+<clear>WebAccessBean_sessionTicket=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/</clear>
+<clear>WebAccessBean_sessionTicket_STENDSOK=""; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/</clear>
+</cookie>
+
+
+</littleproxy:configuration>
